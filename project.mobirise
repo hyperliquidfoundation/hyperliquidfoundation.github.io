@@ -1,0 +1,158 @@
+{
+  "settings": {
+    "name": "Hyper Liquid",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#a0e1e1",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#03251f"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/hyperliquid.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://hyperliquidfoundation.github.io/sitemap.xml\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://hyperliquidfoundation.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "z5nv3mnvmx",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Hyper Liquid | Hyper Foundation | Official Site",
+        "meta_descr": "Hyperliquid (Futures) is a derivative cryptocurrency exchange established in 2023. Currently, there are 157 trading pairs available on the exchange.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/hyper-liquid.png\" alt=\"Hyper Liquid\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uwa01vJBsa",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#58a7ce",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#58a7ce"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#03251f\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#03251f\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Hyperliquid: Revolutionizing Decentralized Trading Through Enhanced Liquidity</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  The realm of decentralized finance (DeFi) has transformed the way we think about trading, investing, and the overall financial ecosystem. Among the various innovations, <a href=\"https://hyperliquidfoundation.github.io/\" class=\"text-primary\">Hyperliquid</a> stands out as a groundbreaking platform that addresses one of the most pressing challenges in DeFi—liquidity. By focusing on providing a hyper-efficient trading experience with deep liquidity, Hyperliquid is poised to redefine decentralized trading for both retail and institutional investors. In this blog, we will explore the features, functionalities, and implications of Hyperliquid in the DeFi landscape.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Hyperliquid?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Hyperliquid is a decentralized exchange (DEX) that utilizes an innovative market-making mechanism to provide users with deep liquidity and low slippage for their trades. Built on the Ethereum blockchain, Hyperliquid combines advanced algorithmic trading models with a user-centric approach to enhance the trading experience. The platform aims to eliminate the traditional barriers associated with liquidity in DeFi, such as high slippage and inefficient price discovery.<br><br><b>The Vision Behind Hyperliquid</b><br>The vision of Hyperliquid is to create a trading environment that is accessible, efficient, and transparent for all users. By leveraging cutting-edge technology and a unique liquidity model, Hyperliquid seeks to democratize access to high-quality trading experiences, enabling users to execute trades seamlessly without the limitations often found in traditional exchanges. The platform is designed to cater to a wide range of participants, from casual traders to professional market makers.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of Hyperliquid</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Innovative Liquidity Model</b><br>At the heart of Hyperliquid’s functionality is its innovative liquidity model. Unlike traditional DEXs that rely on automated market makers (AMMs) and fixed liquidity pools, Hyperliquid employs a dynamic liquidity mechanism. This model allows liquidity providers to offer liquidity based on real-time market conditions, thereby optimizing capital efficiency and reducing slippage.<br><br><b>2. Deep Liquidity Pools</b><br>Hyperliquid’s design focuses on providing deep liquidity across a wide range of trading pairs. By attracting both retail and institutional liquidity providers, the platform ensures that users can execute large trades with minimal price impact. This deep liquidity is essential for traders looking to enter and exit positions swiftly without incurring significant losses due to slippage.<br><br><b>3. Low Slippage and Efficient Price Discovery</b><br>One of the standout features of Hyperliquid is its ability to offer low slippage on trades. The platform’s advanced algorithms continuously adjust pricing based on market demand, ensuring that users receive the best possible rates for their trades. This efficiency in price discovery enhances the overall trading experience, making Hyperliquid an attractive option for both casual and professional traders.<br><br><b>4. User-Friendly Interface</b><br>Hyperliquid places a strong emphasis on user experience. The platform features a clean and intuitive interface that allows users to navigate effortlessly through various trading options. Whether you are a novice trader or an experienced investor, Hyperliquid’s design ensures that you can quickly access the information and tools you need to make informed trading decisions.<br><br><b>5. Cross-Chain Compatibility</b><br>Recognizing the importance of interoperability in the evolving DeFi landscape, Hyperliquid aims to support cross-chain trading. This feature allows users to interact with assets from multiple blockchain networks, broadening their trading options and enhancing liquidity across various platforms.<br><br><b>6. Governance and Community Engagement</b><br>Hyperliquid incorporates a decentralized governance model that empowers users to participate in decision-making processes. Token holders can propose and vote on changes to the platform, ensuring that the community has a say in shaping its future. This governance approach fosters a sense of ownership and transparency, encouraging active participation from users.<br><br><b>7. Security Measures</b><br>Security is a top priority for Hyperliquid. The platform employs advanced security protocols to protect user funds and data from potential vulnerabilities. Regular audits and compliance checks are conducted to ensure that the platform remains secure and trustworthy for its users.<br><br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Hyperliquid Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Dynamic Liquidity Provision<br>Hyperliquid’s dynamic liquidity model allows liquidity providers to contribute funds based on real-time market demands. This flexibility enables liquidity providers to optimize their capital allocation, ensuring that they can maximize their returns while minimizing the risks associated with traditional liquidity provision.<br><br>2. Order Matching System<br>The platform utilizes an advanced order matching system that efficiently processes trades. When a user places a trade, Hyperliquid’s algorithms analyze the available liquidity and matching orders to execute the trade at the best possible price. This system minimizes slippage and enhances the overall trading experience.<br><br>3. Real-Time Market Data<br>Hyperliquid provides users with access to real-time market data, including price movements, trading volumes, and liquidity metrics. This information is crucial for traders looking to make informed decisions based on current market conditions.<br><br>4. Cross-Chain Functionality<br>Hyperliquid’s commitment to cross-chain compatibility allows users to trade assets across different blockchain networks. By integrating with various platforms, Hyperliquid enhances liquidity and expands trading opportunities, empowering users to explore a broader range of assets.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Importance of Hyperliquid in the DeFi Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Addressing Liquidity Challenges<br>One of the most significant challenges in DeFi is liquidity fragmentation, which often leads to high slippage and inefficient trading experiences. Hyperliquid addresses these challenges by providing deep liquidity pools and a dynamic liquidity model that optimizes capital efficiency. This focus on liquidity enhances the overall trading environment, benefiting users across the spectrum.<br><br>2. Empowering Users<br>By providing an intuitive platform with low slippage and efficient price discovery, Hyperliquid empowers users to take control of their trading strategies. The platform’s user-friendly interface and real-time market data enable traders to make informed decisions, fostering confidence in their trading activities.<br><br>3. Fostering Innovation<br>Hyperliquid’s innovative approach to liquidity and trading encourages the development of new trading strategies and financial products within the DeFi space. By attracting both retail and institutional participants, the platform promotes a diverse ecosystem where creativity and innovation can thrive.<br><br>4. Enhancing Transparency<br>The decentralized governance model of Hyperliquid fosters transparency and community engagement. By allowing users to participate in decision-making processes, Hyperliquid ensures that the platform remains aligned with the interests of its community. This transparency builds trust and encourages active participation, further strengthening the platform’s position in the DeFi landscape.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Hyperliquid</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Expansion of Trading Pairs<br>As Hyperliquid continues to grow, it is likely to expand its offerings to include a broader range of trading pairs. This expansion will attract more users and liquidity providers, enhancing the overall liquidity and trading experience on the platform.<br><br>2. Continuous Technological Advancements<br>Hyperliquid is committed to staying at the forefront of technological advancements in the DeFi space. The platform will likely explore new algorithms, trading models, and security measures to enhance its offerings and improve user experience continually.<br><br>3. Strengthening Community Engagement<br>Hyperliquid will likely place a strong emphasis on community engagement initiatives, such as educational programs, webinars, and events. By fostering a vibrant community, Hyperliquid can encourage collaboration and knowledge sharing among users and developers.<br><br>4. Integration with Traditional Finance<br>As DeFi continues to gain traction, Hyperliquid may explore opportunities to integrate with traditional financial systems. This integration could open up new avenues for liquidity provision and trading, bridging the gap between traditional finance and the decentralized ecosystem.<br><br>5. Ongoing Security Enhancements<br>With the ever-evolving landscape of cybersecurity threats, Hyperliquid will prioritize ongoing security enhancements to protect user funds and data. Regular audits, compliance checks, and the implementation of advanced security protocols will be crucial in maintaining user trust and platform integrity.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Market Volatility<br>The cryptocurrency market is known for its volatility, which can impact liquidity and trading strategies. Hyperliquid must ensure that its algorithms and systems can adapt to changing market conditions to maintain a stable trading environment.<br><br>2. Regulatory Landscape<br>As DeFi continues to evolve, regulatory scrutiny may increase. Hyperliquid must navigate potential regulatory challenges while ensuring compliance with applicable laws and regulations, which could impact its operations and offerings.<br><br>3. Competition in the DeFi Space<br>The DeFi space is highly competitive, with numerous platforms offering similar services. Hyperliquid must continually innovate and differentiate itself to attract and retain users in this dynamic market.<br><br>4. Security Risks<br>Despite prioritizing security, the DeFi space is not immune to vulnerabilities and attacks. Hyperliquid must remain vigilant in its security practices to protect user data and assets from potential threats.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Hyperliquid represents a significant advancement in the decentralized trading landscape, offering a comprehensive platform that empowers users with deep liquidity and low slippage. By addressing the challenges of liquidity fragmentation and inefficiencies in traditional DEXs, Hyperliquid creates an accessible and efficient trading environment for a diverse range of participants.<br><br>As the platform continues to evolve and expand its offerings, it has the potential to become a leading player in the DeFi space. By prioritizing user experience, community engagement, and continuous innovation, Hyperliquid embodies the principles of decentralization and efficiency that define the future of finance.<br><br>For traders and investors looking to navigate the complexities of decentralized trading, Hyperliquid offers a promising avenue to explore. With its commitment to enhancing liquidity, transparency, and user empowerment, Hyperliquid is well-positioned to thrive in the dynamic world of DeFi. Whether you are a casual trader or an institutional investor, Hyperliquid provides the tools and resources needed to succeed in this evolving landscape.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uwa01K836V",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
